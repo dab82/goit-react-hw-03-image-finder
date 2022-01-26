@@ -66,7 +66,7 @@ export class App extends Component {
         return {
           images: [...prevState.images, ...images],
           currentImgPerPage: hits.length,
-          page: prevState.page++,
+          page: prevState.page + 1,
         };
       });
     } catch (error) {
